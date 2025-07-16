@@ -8,12 +8,13 @@ Official implementation of IEEE/ACM Transactions on Audio, Speech, and Language 
 
 ## Requirements
 First, prepare Python environment using the Anaconda.
-```
+```shell
 # Create conda environment
 conda create -n echoscan python=3.9
 conda activate echoscan
 # Clone the repository
-git clone https://github.com/inmoyeon/EchoScan.git; cd EchoScan
+git clone https://github.com/inmoyeon/EchoScan.git
+cd EchoScan
 ```
 
 Install essential packages
@@ -28,14 +29,14 @@ scipy
 tensorboard
 ```
 or install packages using requirements.txt.
-```
+```shell
 pip install -r requirements.txt
 ```
 
-## Model
+## EchoScan
 ![](misc/figs/architecture_echoscan.png)
-To train the model, run the following command. The training configuration can be modified in the ```train.py```.
-```
+To train the EchoScan, run the following command. The training configuration can be modified in the ```train.py```.
+```shell
 python train.py
 ```
 
@@ -43,7 +44,7 @@ python train.py
 ### Basic room dataset
 ![](misc/figs/basic_rooms.png)
 To build basic room dataset, including RIRs and floorplans simulated from five types of rooms, run the following command.
-```
+```shell
 python build_room.py
 ```
 
@@ -57,12 +58,12 @@ This dataset includes panoramic images and coordinates of corner points of these
 To convert these corner points from panoramic to 3D corner points using the conversion code [```misc/post_proc.py```](https://github.com/sunset1995/HorizonNet/blob/master/misc/post_proc.py) from the [HorizonNet](https://github.com/sunset1995/HorizonNet/tree/master) repository.
 
 Then, run follwoing command to generate RIRs and floorplans.
-```
+```shell
 python build_room_MA.py
 ```
 
 ## Citations
-```
+```bibtex
 @article{yeon2024echoscan,
   title={EchoScan: Scanning Complex Room Geometries via Acoustic Echoes},
   author={Yeon, Inmo and Jeong, Iljoo and Lee, Seungchul and Choi, Jung-Woo},
