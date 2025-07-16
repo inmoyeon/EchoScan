@@ -55,7 +55,7 @@ Due to the copyright issue, we cannot directly provide the Manhattan-Atlanta roo
 First, you need to obtain the original dataset from [AtlantaNet](https://github.com/crs4/AtlantaNet) repository.
 This dataset includes panoramic images and coordinates of corner points of these images.
 
-To convert these corner points from panoramic to 3D corner points using the conversion code [```misc/post_proc.py```](https://github.com/sunset1995/HorizonNet/blob/master/misc/post_proc.py) from the [HorizonNet](https://github.com/sunset1995/HorizonNet/tree/master) repository.
+To convert these corner points of panoramic image to 3D corner points, use the conversion code [```misc/post_proc.py```](https://github.com/sunset1995/HorizonNet/blob/master/misc/post_proc.py) from the [HorizonNet](https://github.com/sunset1995/HorizonNet/tree/master) repository.
 
 Then, run follwoing command to generate RIRs and floorplans.
 ```shell
